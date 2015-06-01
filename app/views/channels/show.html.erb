@@ -1,0 +1,12 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Mountpoint:</strong>
+</p>
+
+<audio controls="">
+  <source src="http://192.168.59.103:8000<%= @channel.mountpoint %>?">
+</audio>
+
+<%= link_to 'Edit', edit_channel_path(@channel) %> |
+<%= link_to 'Back', channels_path %>

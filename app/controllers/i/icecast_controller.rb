@@ -29,6 +29,6 @@ class I::IcecastController < ApplicationController
     	# make sure request comes from icecast ip
     	# logger.debug request.ip
     	# make sure session is existing user session
-    	# logger.debug session[:session_id]
+    	# logger.debug request.POST[:ses]
     end
 end

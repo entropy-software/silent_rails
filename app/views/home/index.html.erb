@@ -8,3 +8,9 @@
     <li><%= link_to('Login', new_user_session_path) %></li>
   <% end %>
 </ul>
+
+<ul>
+  <% if user_signed_in? %>
+  	<li><%= link_to('Channels', channels_path) %></li>
+  <% end %> 
+</ul>
