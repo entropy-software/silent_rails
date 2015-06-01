@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  devise_for :users
+  get 'home/index'
+
+  root to: "home#index"
   namespace :i do
     get 'notify_mount', to: 'icecast#notify_mount'
     post 'notify_mount', to: 'icecast#notify_mount'
