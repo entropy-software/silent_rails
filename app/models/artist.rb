@@ -1,15 +1,15 @@
 # == Schema Information
 #
-# Table name: channels
+# Table name: artists
 #
 #  id         :integer          not null, primary key
-#  mountpoint :string
+#  name       :string
+#  avatar     :string
 #  created_at :datetime         not null
 #  updated_at :datetime         not null
-#  event_id   :integer
+#  channel_id :integer
 #
 
-class Channel < ActiveRecord::Base
-  belongs_to :event
-  has_many :artists
+class Artist < ActiveRecord::Base
+  belongs_to :channel
 end
