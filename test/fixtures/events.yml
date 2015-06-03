@@ -1,18 +1,17 @@
 # == Schema Information
 #
-# Table name: channels
+# Table name: events
 #
 #  id         :integer          not null, primary key
-#  mountpoint :string
+#  name       :string
 #  created_at :datetime         not null
 #  updated_at :datetime         not null
-#  event_id   :integer
 #
 
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  mountpoint: MyString
+  name: MyString
 
 two:
-  mountpoint: MyString
+  name: MyString
